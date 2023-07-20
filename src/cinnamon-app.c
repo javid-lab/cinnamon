@@ -23,11 +23,6 @@
 #include "cinnamon-window-tracker-private.h"
 #include "st.h"
 
-/* This is mainly a memory usage optimization - the user is going to
- * be running far fewer of the applications at one time than they have
- * installed.  But it also just helps keep the code more logically
- * separated.
- */
 typedef struct {
   guint refcount;
 
