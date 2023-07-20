@@ -5,14 +5,6 @@ install_subdir(
     'theme',
     exclude_files: ['theme-changelog.txt'],
     install_dir: pkgdatadir,
-)
-
-desktop_conf = configuration_data()
-desktop_conf.set('bindir', join_paths(prefix, bindir))
-desktop_conf.set('libexecdir', join_paths(prefix, libexecdir))
-desktop_conf.set('VERSION', meson.project_version())
-
-desktop_files = [
   'cinnamon.desktop',
   'cinnamon2d.desktop',
 ]
